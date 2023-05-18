@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet", href="./ar.css",type='text/css'>
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
@@ -9,7 +10,7 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <input type="button" onclick="location.href='/2d.html'" value="返回">
+        <input id="back" type="button" onclick="location.href='/2d.html'" value="返回">
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
