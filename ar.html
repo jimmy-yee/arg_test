@@ -61,12 +61,29 @@
             >
                 <a-image
                   src="assets/mark2.png"
-                  scale="1 1 1"
+                  scale="0.5 0.5 0.5"
                   class="clickable"
                   rotation="-90 0 0"
                   gesture-handler
-                ></a-image>
-                
+                ></a-image>   
+            </a-marker>
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-tiger.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-image
+                  src="assets/tiger.jpg"
+                  scale="0.5 0.5 0.5"
+                  class="clickable"
+                  rotation="-90 0 0"
+                  gesture-handler
+                ></a-image>   
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
