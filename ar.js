@@ -1,11 +1,11 @@
-var button = document.getElementById('#refresh-button');
+// var button = document.getElementById('#refresh-button');
 
 
-function turnpage(){
-    window.open("https://www.w3schools.com");
-}
+// function turnpage(){
+    
+// }
 
 
 
 
-button.addEventListener('click', turnpage)
+// button.addEventListener('click', turnpage)
