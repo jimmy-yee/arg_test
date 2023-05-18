@@ -49,7 +49,25 @@
                     value="哭哭">
                 </a-text> -->
             </a-marker>
-
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/pattern-mark1.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+                <a-image
+                  src="assets/mark2.png"
+                  scale="1 1 1"
+                  class="clickable"
+                  rotation="-90 0 0"
+                  gesture-handler
+                ></a-image>
+                
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
