@@ -5,3 +5,9 @@ input{
     top: 57%;
     z-index: 2;
     border-radius:8px; }
+
+@media screen and (max-width:1200px){
+    input{
+            width: 60%
+            left: 18%}
+    }
