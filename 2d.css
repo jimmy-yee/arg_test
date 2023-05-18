@@ -1,8 +1,7 @@
-button{
+input{
     position: absolute;
     width: 16%;
     left: 38%;
     top: 57%;
     z-index: 2;
     border-radius:8px; }
-    
