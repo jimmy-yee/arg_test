@@ -11,7 +11,7 @@
 
     <body style="margin: 0; overflow: hidden;">
         <button onclick="location.href='./2d.html'">back</button>
-        <input type="file" capture="user" accept="image/*"/>
+        <button id="my_button">get a picture</button>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -54,14 +54,14 @@
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/pattern-mark1.patt"
+                url="assets/pattern-flag@3x.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
                 <a-image
-                  src="assets/mark2.png"
+                  src="assets/flag2@3x.png"
                   scale="0.5 0.5 0.5"
                   class="clickable"
                   rotation="-90 0 0"
@@ -88,5 +88,18 @@
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
+        <script>
+             const button_el = document.getElementById("my_button");
+             button_el.addEventListener("click", function(){
+            // 將 video 標籤的影片寬高，顯示於 canvas 標籤上
+             canvas_el.width = video_el.videoWidth;
+             canvas_el.height = video_el.videoHeight;
+            //console.log(video_el.videoWidth);
+            //console.log(video_el.videoHeight);
+            
+            // drawImage 說明文件： https://www.w3schools.com/tags/canvas_drawimage.asp
+             canvas_el.getContext('2d').drawImage(video_el, 0, 0, canvas_el.width, canvas_el.height);
+      });
+        </script>
     </body>
 </html>
